@@ -1,0 +1,587 @@
+<html>
+<head><title>Movie tickets,plays,sports and events</title>
+    <style>
+        .headsection{
+            background-color: white;
+        }
+        #BMSLogo{
+            height: 48px;
+            width: 109px;
+            margin-left: 40px;
+        }
+        #Searchbar{
+            width: 45%;
+            height: 30px;
+            position: relative;
+            top: -20px;
+            margin-left: 10px;
+            border: 0.01px solid gray;
+            border-radius: 5px;
+        }
+        #Searchbar:focus{
+            outline:none;
+        }
+        #searchIcon{
+            color: black;
+            position: relative;
+            top: -15px;
+            left: -650px;
+            font-size: 20px;
+        }
+        #dropdown{
+            border: none;
+            position: relative;
+            top: -20px;
+            right: -230px;
+        }
+        #moreIcon{
+            position: relative;
+            top: -14px;
+            right: -250px;
+        }
+        #signinbtn{
+            position: relative;
+            top: -20px;
+            right: -230px;
+            border: none;
+            border-radius: 10%;
+            background-color: #e34252;
+            color: white;
+            padding: 3px;
+            width: 70px;
+        }
+        .extravalues{
+            height: 35px;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+        #extravalue1{
+            font-family: sans-serif;
+            color: #4f4a4a;
+            font-size: 15px;
+            font-weight: 100;
+            position: relative;
+            top: 10px;
+        }
+        .ad1o1{
+            background-color: lightgray;
+            width: 100%;
+            height: 50%;
+        }
+        #ad1{
+            width: 98%;
+            height: 260px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        .recommendedMovies{
+            background-color: white;
+            height: 580px;
+            width: 100%;
+        }
+        #recoTitle{
+            color: black;
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            position: relative;
+            top: 10px;
+            left: 50px;
+        }
+        #seeAll{
+            position: relative;
+            top: -30px;
+            right: -1150px;
+            color: #e34252;
+            font-family: sans-serif;
+        }
+        #ParamSundari{
+            width: 230px;
+            height: 400px;
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+        #BangalFiles{
+            width: 230px;
+            height: 400px;
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+        #Lokah{
+            width: 230px;
+            height: 400px;
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+        #Madharshi{
+           width: 230px;
+            height: 400px;
+            position: relative;
+            top: -50px;
+            left: 50px; 
+        }
+        #SuFromSo{
+            width: 230px;
+            height: 400px;
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+        #title1, #title2, #title3, #title4, #title5{
+            font-family: sans-serif;
+            font-size: 19px;
+            font-weight: 600;
+        }
+        #genre1, #genre2, #genre3, #genre4, #genre5{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            color: #736d6d;
+        }
+        #title1, #genre1{
+            position: relative;
+            top: -55px;
+            left: 55px;
+        }
+        #title2, #genre2{
+            position: relative;
+            top: -135px;
+            left: 300px
+        }
+        #title3, #genre3{
+            position: relative;
+            left: 530px; 
+            top: -215px
+        }
+        #title4, #genre4{
+            position: relative;
+            top:-295px;
+            right:-770px
+        }
+        #title5, #genre5{
+            position: relative;
+            top:-375px;
+            right: -1000px;
+        }
+        .ad2o1{
+            background-color: white;
+            width: 100%;
+            height: 50%;
+        }
+        #ad2{
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+      #cs{
+        position: relative;
+        left: 50px;
+        top: -10px;
+        border-radius: 3px;
+        height: 200px;
+        width: 200px;
+      }
+      #events{
+        position: relative;
+        left: 80px;
+        top: -10px;
+        border-radius: 3px;
+        height: 200px;
+        width: 200px;
+      }
+      #ts{
+        position: relative;
+        left: 110px;
+        top: -10px;
+        border-radius: 3px;
+        height: 200px;
+        width: 200px;
+      }
+       #kids{
+        position: relative;
+        left: 140px;
+        top: -10px;
+        border-radius: 3px;
+        height: 200px;
+        width: 200px;
+      }
+       #fun{
+        position: relative;
+        left: 170px;
+        top: -10px;
+        border-radius: 3px;
+        height: 200px;
+        width: 200px;
+      }
+      .premiereMoviesSegment{
+        position: relative;
+        top: 140px;
+        width: 100%;
+        height: 580px;
+        background-color: rgb(43,49,73);
+      }
+      #pmovielogo1{
+        background-color: #e34252 ;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        
+      }
+      #pmovies{
+        color: white;
+        position: relative;
+        top: -10px;
+        left: 150px;
+        font-family: sans-serif;
+      }
+      #pmovie1{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: 20px;
+    left:60px;
+}
+       h2, h4 , h3 , h5{
+         margin: 0;         
+         padding: 0;        
+         }
+
+       h2{
+         margin-bottom: 5px; 
+         letter-spacing: 5px;  
+        }
+        h3{
+           margin-bottom: 5px;  
+           font-size: 25px;
+           font-weight:700;
+        }
+
+h4 ,h5{
+  margin-top: 0; 
+  font-weight: 100;       
+}
+#pmscreenshot{
+    position: relative;
+    top:30px;
+    left:55px;
+}
+.yourMusicStudio{
+    background-color: whitesmoke;
+}
+#yms{
+    position: relative;
+    top:-50px;
+    left:55px;
+}
+.trendingSearchesrn{
+    position: relative;
+    top:-25px;
+    background-color: whitesmoke;
+}
+.para1{
+    background-color: white;
+    position: relative;
+    top:-30px;
+    left:70px;
+    height: 100px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+#para1, #para2{
+    color: #e34252;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 15px;
+}
+#para1o1, #para2o2{
+    color: #4f4a4a;
+    font-family: sans-serif;
+    padding: 15px;
+    position: relative;
+    top: -40px;
+    
+}
+.para2{
+    background-color: white;
+    position: relative;
+    top:-260px;
+    left:390px;
+    height: 100px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}
+.para3{
+    background-color: white;
+    position: relative;
+    top:-490px;
+    left: 600px;
+    height: 100px;
+    width: 500px;
+    border: none;
+    border-radius: 5px; 
+}
+.para4{
+    background-color: white;
+    position: relative;
+    top:-490px;
+    left: 600px;
+    height: 100px;
+    width: 150px;
+    border: none;
+    border-radius: 5px; 
+}
+.para5{
+    background-color: white;
+    position: relative;
+    top:-607px;
+    left: 800px;
+    height: 100px;
+    width: 150px;
+    border: none;
+    border-radius: 5px; 
+}
+.end{
+    background-color: rgb(51, 51, 56);
+    width: 100%;
+    height: 500%;
+    position: relative;
+    top: -550px;
+}
+#tent{
+    position: relative;
+    top:10px;
+    left:30px;
+}
+#contactbtn{
+    background-color: #e34252;
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    top: -110px;
+    left:1055px;
+}
+#listShows{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    position: relative;
+    top:-33px;
+    left:90px;
+}
+#info{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100px;
+    position: relative;
+    top: -68px;
+    left: 230px;
+}
+#lastss{
+    position: relative;
+    top: -100px;
+}
+#lastpara, #lastinfo{
+    color: darkgray;
+    font-family: Arial, sans-serif;
+    line-height: 20px;
+    position: relative;
+    top:-100px;
+    font-size: smaller;
+    padding-left: 15px;
+}
+#lastpara{
+    font-size: 11px;
+    font-weight: 200;
+}
+#lastinfo{
+    font-size: 10px;
+    font-weight: normal;
+    word-spacing: 3px;
+}
+#hrtag{
+    color: lightslategray;
+    position: relative;
+    top:-100px;
+    font-weight: lighter;
+}
+#TheEnd{
+    position: relative;
+    top:-50px;
+    left: 20px;
+}
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+        
+</head>
+<body> 
+    <div class="bmsclone">
+        <div class="headsection"> 
+            <img src="BOOK.png" id="BMSLogo" alt="BookMyShowLogo">
+            
+            <input type="text" placeholder="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Search for movies,events,place,sports and activities" id="Searchbar">
+                <select id="dropdown">
+                    <option>Bangalore</option>
+                    <option>Hyderabad</option>
+                    <option>Mumbai</option>
+                    <option>Chennai</option>
+                    <option>Panji</option>
+                </select>
+                <span class="material-symbols-outlined" id="searchIcon">search</span>
+                <button id="signinbtn">Sign in</button>
+                <span class="material-symbols-outlined" id="moreIcon">menu</span>
+                </div>
+                <div class="extravalues"> 
+                    <p id="extravalue1">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Movies &nbsp;&nbsp; &nbsp; Stream &nbsp;&nbsp;&nbsp; Events &nbsp;&nbsp;&nbsp; Plays &nbsp;&nbsp;&nbsp; Sports &nbsp;&nbsp;&nbsp; Activities &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                           &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   ListYourShow &nbsp;&nbsp;&nbsp; Corporates &nbsp;&nbsp;&nbsp; Offers &nbsp;&nbsp;&nbsp; Gift Cards </p>
+                
+                </div>
+                <div class="ad1o1">
+                   <iframe src="https://karnatakatourism.org/" id="ad1"></iframe>  
+                </div>
+                    <div class="recommendedMovies">
+                        <p id="recoTitle"> Recommended Movies</p>
+                        <h6 id="seeAll">See All</h6>
+                        <img src="ParamSundari.PNG" id="ParamSundari" alt="ParamSundari">
+                       
+                        <img src="BangalFiles.PNG" id="BangalFiles" alt="BangalFiles">
+                        
+                        <img src="Lokah.PNG" id="Lokah" alt="Lokah">
+                        
+                        <img src="Madharshi.PNG" id="Madharshi" alt="Madharshi">
+                        
+                        <img src="SuFromSo.PNG" id="SuFromSo" alt="SuFromSo"> 
+                             
+                        <p id="title1">Param Sundari</p>
+                        <p id="genre1">Comedy/Drama/Romance</p>
+                        <p id="title2">The Bengal Files</p>
+                        <p id="genre2">Drama/Historical</p>
+                        <p id="title3">Lokah</p>
+                        <p id="genre3">Action/Comedy/Fantasy</p>
+                        <p id="title4">Madharshi</p>
+                        <p id="genre4">Action/Thriller</p>
+                        <p id="title5">Su From So</p>
+                        <p id="genre5">Commedy/Horror</p>
+                    </div>
+                    <div class="ad2o1">
+                        <img src="ad2.PNG" id="ad2" height=90px width=1200px>
+                        <div class="section2">
+                            <p id="recoTitle"> The Best Of Live Events</p>
+                            <img src="comedyShows.PNG" id="cs">
+                            <img src="events.PNG" id="events">
+                            <img src="ts.PNG" id="ts">
+                            <img src="kids.PNG" id="kids">
+                            <img src="fun.PNG" id="fun">
+                        </div>
+                    </div>
+                    <div class="premiereMoviesSegment">
+                        <div id="pmovielogo1"></div>
+                        <div id="pmovielogo2"></div>
+                        <h2 id="pmovies">PREMIERE</h2>
+                        <h4 id="pmovies">Watch new movies at home, every Friday</h4>
+                        <h3 id="pmovie1">Premieres</h3>
+                        <h5 id="pmovie1">Brand new releases every Friday</h5>
+                        <img src="pmovies.PNG" id="pmscreenshot" alt="Premieres" height="360px" width="1150px">
+                    </div>
+                    <br> <br> <br> <br> <br> <br>  <br>
+                    <div class="yourMusicStudio">
+                        <p id="recoTitle">Your Movies Studio</p>
+                        <h6 id="seeAll">See All</h6>
+                        <img src="yMS.PNG" alt="Your Music Studio" id="yms" height="450px" width="1150px">
+                    </div>
+                    <div class="trendingSearchesrn">
+                        <p id="recoTitle">Trending Searches Rigth Now</p>
+                        <h6 id="seeAll">See All</h6>
+                        <div class="para1">
+                             <p id="para1">Lokah:Chapter 1 - Chandra</p>
+                            <p id="para1o1">Movies</p>
+                        </div>
+                        <div class="para1">
+                            <p id="para1">The Conjuring:Last Rites</p>
+                            <p id="para1o1">Movies</p>
+                        </div>
+                        <div class="para2">
+                            <p id="para2">Su From So</p>
+                            <p id="para2o2">Movies</p>
+                        </div>
+                         <div class="para2">
+                            <p id="para2">Mark</p>
+                            <p id="para2o2">Movies</p>
+                        </div>
+                         <div class="para3">
+                            <p id="para2">Demon Slayer - Kimetsu no Yaiba - The Movie: Infinity Castle</p>
+                            <p id="para2o2">Movies</p>
+                        </div>
+                        <div class="para4">
+                            <p id="para2">Param Sundari</p>
+                            <p id="para2o2">Movies</p>
+                        </div>
+                        <div class="para5">
+                            <p id="para2">Maadarasi</p>
+                            <p id="para2o2">Movies</p>
+                        </div>
+                    </div>
+                    <div class="end">
+                        <img src="tentend.PNG" alt="Tent" height="50px" width="50px" id="tent">
+                        <p id="listShows">List Your Shows</p>
+                        <p id="info">Got a show, event, activity or a great experience? Partner with with us and get listed on BookMyShow</p>
+                        <input type="button" value="Contact today!" id="contactbtn">
+                        <img src="lastss.PNG" id="lastss" alt="Last" width="1249px">
+                        <p id="lastpara">MOVIES NOW SHOWING IN BENGALURU</p>
+                        <p id="lastinfo">Madharaasi | The Conjuring: Last Rites | Ghaati | Baaghi 4 | Lokah: Chapter 1 - Chandra | Elumale | Param Sundari | Su From So | Mahavatar Narsimha | The Bengal Files</p>
+                        <p id="lastpara">UPCOMING MOVIES IN BENGALURU</p>
+                        <p id="lastinfo">Jhor | Tinchari Mai: The Untold Story | Humans In The Loop | Nungshibeine Nungshimaneibi 3 | Dil Madharaasi | Nankhatai | Mangalsana | Devi - Ek Pretmanobir Panchali | Mehar | College Campus</p>
+                        <p id="lastpara">MOVIES BY GENRE</p>
+                        <p id="lastinfo">Drama Movies | Thriller Movies | Action Movies | Comedy Movies | Romantic Movies | Horror Movies | Suspense Movies | Crime Movies | Musical Movies | Sports Movies</p>
+                        <p id="lastpara">MOVIES BY LANGUAGE</p>
+                        <p id="lastinfo">Movies in Kannada | Movies in English | Movies in Hindi | Movies in Telugu | Movies in Tamil | Movies in Malayalam | Movies in Bengali | Movies in Konkani | Movies in Portuguese | Movies in Khasi</p>
+                        <p id="lastpara">SPORTS EVENTS IN BENGALURU</p>
+                        <p id="lastinfo">Running | Chess | Cycling | Horse Race | Kabaddi | Baseball | Cricket | Boat Race | Archery | Bowling</p>
+                        <p id="lastpara">EVENTS IN TOP CITIES</p>
+                        <p id="lastinfo">Events in Mumbai | Events in Delhi-NCR | Events in Chennai | Events in Bengaluru | Events in Hyderabad | Events in Pune | Events in Ahmedabad | Events in Kolkata | Events in Kochi</p>
+                        <p id="lastpara">CINEMAS IN TOP CITIES</p>
+                        <p id="lastinfo">Cinemas in Mumbai | Cinemas in Delhi-NCR | Cinemas in Chennai | Cinemas in Bengaluru | Cinemas in Hyderabad | Cinemas in Pune | Cinemas in Ahmedabad | Cinemas in Kolkata | Cinemas in Kochi</p>
+                        <p id="lastpara">PLAYS IN TOP CITIES</p>
+                        <p id="lastinfo">Plays in Mumbai | Plays in Delhi-NCR | Plays in Chennai | Plays in Bengaluru | Plays in Hyderabad | Plays in Pune | Plays in Ahmedabad | Plays in Kolkata | Plays in Kochi</p>
+                        <p id="lastpara">PLAYS IN TOP CITIES</p>
+                        <p id="lastinfo">Plays in Mumbai | Plays in Delhi-NCR | Plays in Chennai | Plays in Bengaluru | Plays in Hyderabad | Plays in Pune | Plays in Ahmedabad | Plays in Kolkata | Plays in Kochi</p>
+                        <p id="lastpara">ACTIVITIES IN TOP CITIES</p>
+                        <p id="lastinfo">Activities in Mumbai | Activities in Delhi-NCR | Activities in Chennai | Activities in Bengaluru | Activities in Hyderabad | Activities in Pune | Activities in Ahmedabad | Activities in Kolkata | Activities in Kochi</p>
+                        <p id="lastpara">MOVIES NOW SHOWING</p>
+                        <p id="lastinfo">Baaghi 4 | The Conjuring: Last Rites | Param Sundari | Madharaasi | Ghaati | Kotha Lokah: Chapter 1 - Chandra | Lokah: Chapter 1 - Chandra | Vash Level 2 | Adventure of Jetcat 7D - Combo | Roller Coaster 7D - Combo</p>
+                        <p id="lastpara">COUNTRIES</p>
+                        <p id="lastinfo">Indonesia | Singapore | Sri Lanka | West Indies</p>
+                        <p id="lastpara">HELP</p>
+                        <p id="lastinfo">About Us | Contact Us | Current Opening | Press Release | Press Coverage | Sitemap | FAQs | Terms and Conditions | Privacy Policy</p>
+                        <p id="lastpara">BOOKMYSHOW EXCLUSIVES</p>
+                        <p id="lastinfo">Lollapalooza India | BookAChange | Corporate Vouchers | Gift Cards | List My Show | Offers | Stream | Trailers</p>
+                        <hr id="hrtag">
+                        <img src="lastone.PNG" alt="lastinfo" id="TheEnd" width="1200px">
+
+                    </div>
+</div>
+</body>
+</html>
+     
+
+
+
+
+
+
